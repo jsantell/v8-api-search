@@ -6,8 +6,9 @@ export function formatResults(matched, input, useMarkup) {
       description = `${ns.substr(0, ns.length - 2)}`; 
     }
     else {
-      description = `${ns && ns !== name ? `  ${ns}` :''}`;
-      if (description && useMarkup) description = `<dim>${description}</dim>`;
+      description = ns && ns !== name ? ns : '';
+      if (description && useMarkup) description = ` <dim>${description}</dim>`;
+      else if (description) description = ` (${description})`;
       description = `${name}${description}`;
     }
 

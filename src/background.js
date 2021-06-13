@@ -27,7 +27,6 @@ async function initialize() {
   await setAPI(store.api ?? 'node-16');
 
   browser.storage.onChanged.addListener(async (changes, namespace) => {
-    console.log('storage change', changes, namespace);
     for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
       if (key === 'api') {
         await setAPI(name);
