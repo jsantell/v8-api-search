@@ -1,0 +1,32 @@
+{
+  "node-16": {
+    "root": "https://v8docs.nodesource.com/node-16.0/",
+    "search": "https://v8docs.nodesource.com/node-16.0/search/",
+    "v8": "9.0.257",
+    "node": "16.0.0"
+  },
+  "node-15": {
+    "root": "https://v8docs.nodesource.com/node-15.0/",
+    "search": "https://v8docs.nodesource.com/node-15.0/search/",
+    "v8": "8.6.395",
+    "node": "15.0.1"
+  },
+  "node-14": {
+    "root": "https://v8docs.nodesource.com/node-14.15/",
+    "search": "https://v8docs.nodesource.com/node-14.15/search/",
+    "v8": "8.4.371",
+    "node": "14.15.0"
+  },
+  "node-12": {
+    "root": "https://v8docs.nodesource.com/node-12.19/",
+    "search": "https://v8docs.nodesource.com/node-12.19/search/",
+    "v8": "7.8.279",
+    "node": "12.19.0"
+  },
+  "node-10": {
+    "root": "https://v8docs.nodesource.com/node-10.15/",
+    "search": "https://v8docs.nodesource.com/node-10.15/search/",
+    "v8": "6.8.275",
+    "node": "10.15.3"
+  }
+}
