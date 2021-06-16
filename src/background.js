@@ -1,10 +1,10 @@
 import { match } from './match.js';
 import { formatResults } from './format.js';
-import { getStorage } from './storage.js';
 import { APIData } from './APIData.js';
+import * as storage from './storage.js';
 
 const useMarkup = !/Firefox/i.test(navigator.userAgent); //forgive me
-self.browser = self.browser ?? self.chrome;
+const browser = self.browser ?? self.chrome;
 
 async function setAPI(name) {
   self.api = await new APIData(name).initialize();
@@ -23,13 +23,13 @@ async function setAPI(name) {
 
 self.api = null;
 async function initialize() {
-  let store = await getStorage();
-  await setAPI(store.api ?? 'node-16');
+  let store = await storage.get();
+  await setAPI(store['api-version'] ?? 'node-16');
 
-  browser.storage.onChanged.addListener(async (changes, namespace) => {
+  browser.storage.onChanged.addListener(async (changes, ns) => {
     for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
-      if (key === 'api') {
-        await setAPI(name);
+      if (key === 'api-version') {
+        await setAPI(newValue);
       }
     }
   });

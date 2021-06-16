@@ -7,14 +7,19 @@
     "page": "src/background.html"
   },
   "icons": {
-    "16": "assets/icon-16.png",
-    "48": "assets/icon-48.png",
-    "128": "assets/icon-128.png"
+    "16": "resources/icon-16.png",
+    "32": "resources/icon-32.png",
+    "48": "resources/icon-48.png",
+    "64": "resources/icon-64.png",
+    "128": "resources/icon-128.png"
   },
   "omnibox": { "keyword" : "v8" },
   "permissions": [
     "storage"
   ],
+  "options_ui": {
+    "page": "src/options.html"
+  },
   "manifest_version": 2,
   "browser_specific_settings": {
     "gecko": {

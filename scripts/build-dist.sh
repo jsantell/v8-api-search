@@ -9,7 +9,7 @@ output_name="v8_api_search-${version}";
 
 echo "Generating $output_name"
 
-cp -r assets v8-api-search
+cp -r resources v8-api-search
 cp -r src v8-api-search
 cp -r data v8-api-search
 cp manifest.json v8-api-search

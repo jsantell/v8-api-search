@@ -1,0 +1,16 @@
+body {
+  --v8-blue: #498af4;
+  background-color: #fefefe;
+  color: #333;
+  font-size: 16px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+#content {
+  width: 80%;
+  margin: 10px auto;
+}
